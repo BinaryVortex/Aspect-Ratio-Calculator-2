@@ -1,0 +1,130 @@
+/* Base styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background gradient */
+body {
+  background: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Beautiful gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align text for better look */
+}
+
+/* Heading styling */
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #170444;
+  margin-bottom: 30px; /* Spacing for better separation */
+}
+
+h2 span {
+  color: #895cf3;
+}
+
+/* Input wrapper styling */
+.wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-bottom: 40px; /* Increased margin for better separation */
+}
+
+.wrapper-1 input {
+  width: 80px; /* Consistent width for inputs */
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for inputs */
+  transition: border 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.wrapper-1 input:focus {
+  border: 2px solid #895cf3;
+  outline: none;
+}
+
+/* Label styling */
+label {
+  display: block;
+  color: #170444;
+  font-weight: 600;
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+/* Box styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+/* Wrapper input styling */
+.wrapper-2 input,
+.wrapper-3 input {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 28px;
+  }
+
+  .wrapper-1 input {
+      width: 60px;
+      font-size: 20px;
+  }
+
+  .box {
+      gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 22px;
+  }
+
+  .wrapper-1 input {
+      width: 50px;
+      font-size: 18px;
+  }
+
+  .wrapper-1 {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .box {
+      gap: 10px;
+  }
+}
